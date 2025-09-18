@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Dashboard</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+        .card h3 {
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #777;
+        }
+        .card button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .card button:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Educational Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h3>Courses</h3>
+            <p>View and manage your courses.</p>
+            <button onclick="navigate('courses')">Go to Courses</button>
+        </div>
+        <div class="card">
+            <h3>Assignments</h3>
+            <p>Track your assignments and deadlines.</p>
+            <button onclick="navigate('assignments')">Go to Assignments</button>
+        </div>
+        <div class="card">
+            <h3>Grades</h3>
+            <p>Check your grades and progress.</p>
+            <button onclick="navigate('grades')">View Grades</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Educational Platform | All Rights Reserved</p>
+    </div>
+
+    <script>
+        function navigate(page) {
+            alert("Navigating to " + page);
+            // Here you can add code to navigate to another page or display more content dynamically
+        }
+    </script>
+
+</body>
+</html>
